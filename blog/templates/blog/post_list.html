@@ -6,7 +6,17 @@
   </head>
   <body>
     <h1>Hi this is blog created by H Agrawal</h1>
-    <h3>This is just to check</h3>
+    <div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
     <h4>Hello fraandd chaii peelo</h4>
 
   </body>
